@@ -22,7 +22,7 @@
             <h2>About Me</h2>
 
             <figure>
-                <img src="images/profile.jpg" alt="Photo of me" width="250">
+                <img src="profile.jpg" alt="Photo of me" width="250">
                 <figcaption>This is my profile picture.</figcaption>
             </figure>
 
