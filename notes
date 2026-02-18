@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Notes</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Tags I Have Learned</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="notes.html">HTML Notes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Description List of HTML Tags</h2>
+
+            <dl>
+                <dt>&lt;header&gt;</dt>
+                <dd>Defines the introductory section of a webpage or a section.</dd>
+
+                <dt>&lt;nav&gt;</dt>
+                <dd>Defines a set of navigation links.</dd>
+
+                <dt>&lt;main&gt;</dt>
+                <dd>Represents the main content of the document.</dd>
+
+                <dt>&lt;section&gt;</dt>
+                <dd>Defines a section in a document.</dd>
+
+                <dt>&lt;footer&gt;</dt>
+                <dd>Defines the footer section of a webpage or section.</dd>
+            </dl>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
