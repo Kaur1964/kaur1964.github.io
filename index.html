@@ -2,55 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Meta viewport added for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Three Star Media</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1 class="site-title">Welcome to My Website</h1>
+        <div class="container header-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notes.html">HTML Notes</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/main-banner.jpg" alt="Banner">
+        <div class="hero-text">
+            <h1>Welcome to Three Star Media</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Connect with us</button>
+        </div>
+    </section>
 
-        <section>
-            <h2>About Me</h2>
+    <!-- ABOUT US -->
+    <section class="about container">
+        <img src="images/about-us.jpg" alt="About Us">
+        <div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+    </section>
 
-            <figure>
-                <img src="images/profile.jpg" alt="Photo of me" id="my-image" width="250">
-                <figcaption>This is my profile picture.</figcaption>
-            </figure>
+    <!-- SERVICES -->
+    <section class="services container">
+        <h2>Our Services</h2>
 
-            <p>
-                Hello! My name is Your Name. I am learning web development and improving my HTML and CSS skills.
-            </p>
-        </section>
+        <div class="service-grid">
 
-        <section>
-            <h2>My Hobbies</h2>
+            <div class="card">
+                <img src="images/digital.jpg" alt="">
+                <h3>Digital Transformation</h3>
+                <button>Digital Plans</button>
+            </div>
 
-            <ul class="hobby-list">
-                <li>Hiking</li>
-                <li>Playing Cricket</li>
-                <li>Listening to Music</li>
-                <li>Reading Books</li>
-            </ul>
-        </section>
+            <div class="card">
+                <img src="images/marketing.jpg" alt="">
+                <h3>Marketing</h3>
+                <button>Marketing Plans</button>
+            </div>
 
-    </main>
+            <div class="card">
+                <img src="images/video.jpg" alt="">
+                <h3>Video Production</h3>
+                <button>Video Plans</button>
+            </div>
 
+            <div class="card">
+                <img src="images/web.jpg" alt="">
+                <h3>Web Development</h3>
+                <button>Web Plans</button>
+            </div>
+
+            <div class="card">
+                <img src="images/print.jpg" alt="">
+                <h3>Print</h3>
+                <button>Print Plans</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="vision">
+        <img src="images/vision.jpg" alt="">
+        <div class="vision-text">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team container">
+        <h2>Our Team</h2>
+
+        <div class="team-member">
+            <img src="images/john.jpg" alt="">
+            <div>
+                <h3>John Doe</h3>
+                <p>CEO and Co-owner</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="images/bob.jpg" alt="">
+            <div>
+                <h3>Bob Rite</h3>
+                <p>CFO and Co-owner</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact container">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <img src="images/map.jpg" alt="Map">
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 My Website</p>
+        <p>&copy; 2026 Three Star Media</p>
     </footer>
 
 </body>
