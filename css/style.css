@@ -5,44 +5,68 @@
     box-sizing: border-box;
 }
 
-/* GLOBAL */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-/* HEADER */
-header {
+/* ================= HEADER ================= */
+.header {
     background: #222;
     color: white;
-    padding: 10px 0;
 }
 
-.header-container {
+/* NAV CONTAINER */
+.nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-nav ul {
+/* LOGO */
+.logo img {
+    width: 60px;
+}
+
+/* NAV DESKTOP */
+.nav ul {
     display: flex;
     list-style: none;
 }
 
-nav li {
-    margin-left: 20px;
+.nav li {
+    margin: 0 10px;
 }
 
-nav a {
-    color: white;
+.nav a {
+    color: #c78c06;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
-/* HERO */
+/* ACTIVE TAB */
+.nav .active a {
+    background: #c78c06;
+    color: black;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 6px;
+}
+
+.search button {
+    background: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 6px;
+}
+
+/* ================= HERO ================= */
 .hero {
     position: relative;
 }
@@ -51,102 +75,110 @@ nav a {
     width: 100%;
 }
 
-.hero-text {
+.hero-content {
     position: absolute;
     top: 30%;
     left: 10%;
     color: white;
 }
 
-/* ABOUT */
-.about {
-    display: flex;
-    gap: 20px;
-    padding: 40px 0;
-}
-
-.about img {
-    width: 50%;
-}
-
-/* SERVICES */
-.services {
-    padding: 40px 0;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card img {
-    width: 100%;
-}
-
-/* VISION */
-.vision {
-    position: relative;
-}
-
-.vision img {
-    width: 100%;
-}
-
-.vision-text {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: white;
-}
-
-/* TEAM */
-.team-member {
-    display: flex;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.team-member img {
-    width: 150px;
-}
-
-/* CONTACT */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.contact input,
-.contact textarea {
+.btn {
+    background: #c78c06;
     padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-/* FOOTER */
-footer {
+/* ================= GRID ================= */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card img {
+    width: 100%;
+}
+
+.btn-dark {
+    background: #222;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* ================= FOOTER ================= */
+.footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
-/* MOBILE RESPONSIVE */
+/* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
 
-    .about {
+    .nav-container {
         flex-direction: column;
+        align-items: stretch;
     }
 
-    .service-grid {
+    /* BIG GOLD HOME */
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav li {
+        margin: 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav li:first-child {
+        background: #c78c06;
+    }
+
+    .nav li:first-child a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    /* SEARCH FULL WIDTH */
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    /* STACK SECTIONS */
+    .about-grid,
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero-text,
-    .vision-text {
+    .hero-content {
         position: static;
         padding: 20px;
-        background: rgba(0,0,0,0.6);
+        background: rgba(0,0,0,0.7);
     }
 }
